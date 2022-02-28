@@ -9,7 +9,6 @@
   <script type="text/javascript" src="js/myCookieUtil.js"></script>
   <script type="text/javascript" src="js/myEventUtil.js"></script>
 </head>
-
 <body>
   <p>ФИО студента: <span id="name-value">(none)</span><br />
     Возраст: <span id="age-value">(none)</span><br />
@@ -17,7 +16,6 @@
   <input type="button" value="Удалить файлы cookie" id="delete-btn" />
   <p>Обновите страницу в браузере, чтобы увидеть значения. Нажмите кнопку &quot;Удалить файлы
     cookie&quot; для их удаления.</p>
-
   <script type="text/javascript">
     myEventUtil.addHandler(window, "load", function () {
       document.getElementById("name-value").innerHTML = myCookieUtil.get("сname");
@@ -32,7 +30,6 @@
       myCookieUtil.set("age", "27");
       myCookieUtil.set("grade", "10");
     });
-
   </script>
 </body>
 
